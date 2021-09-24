@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root{
     --vermelho: #E50914 !important;
     --preta: #141414 !important;
@@ -11,7 +13,7 @@
 /*Elementos Base*/
 body{
     background: var(--preta) !important;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bebas Neue', cursive;
     color: white !important;
 }
 
@@ -23,8 +25,8 @@ header .container {
 
 header .logo {
     color: var(--vermelho);
-    font-family: 'Arial Black', Times, serif;
-    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
     margin-left: 5px;
 }
 
@@ -40,33 +42,46 @@ header nav a:hover {
 
 /*Filme principal*/
 .filme-principal {
-    font-size: 16px;
-    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/depositphotos_7273946-stock-photo-scuderia-ferrari-f1-michael-schumacher.jpg');
-    height: 600px;
-    background-size: cover;
+    font-size: 100px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height:400px;
+    background-size:cover;
+ 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.filme-principal .descricao {
-    margin-bottom: 25px;
+.filme-principal {
+    margin-bottom: 15px;
     margin-top: 10px;
+    font-size: 25px;
+    
+}
+
+.descricao {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 10px;
 }
 
 .titulo {
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: 50px;
+    padding: 10px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .botao {
     background-color: rgba(0, 0, 0, 0.50);
     border: none;
     color: white;
-    padding: 15px 30px;
+    padding: 20px 40px;
     margin-right: 15px;
+    margin-top: 15px;
     font-size: 12px;
 
     cursor: pointer;
@@ -80,4 +95,19 @@ header nav a:hover {
 
 .botao i {
     margin-right: 6px;
+}
+
+.container {
+    margin-left: 40px;
+    
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
